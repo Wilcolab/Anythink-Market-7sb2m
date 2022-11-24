@@ -46,9 +46,11 @@ class Item extends React.Component {
       this.props.currentUser.username === this.props.item.seller.username;
 
     // check if item.image is null
-    const itemImage = this.props.item.image
-      ? this.probs.item.image
-      : "placeholder.png";
+    const itemImage = this.props.item.image ? (
+      this.probs.item.image
+    ) : (
+      "placeholder.png"
+    );
 
     return (
       <div className="container page" id="item-container">

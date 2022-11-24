@@ -30,7 +30,11 @@ const ItemPreview = (props) => {
   };
 
   // check if item.image is null
-  const itemImage = item.image ? item.image : "placeholder.png";
+  const itemImage = item.image ? (
+    item.image
+  ) : (
+    "placeholder.png"
+  );
 
   return (
     <div
